@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 50px auto;
+  text-align: center;
+  border: 2px solid #E0E0E0;
+}
+
+.letters {
+  display: inline-block;
+}
+.letters::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.letter {
+  float: left;
+  width: 90px;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  font-size: 100px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.4s;
+          transition: all 0.4s;
+  overflow: hidden;
+}
+.letter.is-hidden {
+  opacity: 1;
+  width: 0;
+  visibility: hidden;
+}
+
+.inputs {
+  text-align: center;
+}
+
+
+#word{
+	font-size: 80px;
+	height: 300px;
+}
+
+
+
+
+
+#player {width: 100%; height: 100%; position: fixed; z-index: -99;}
+#myid {background: rgba(0,0,0,.1); width: 100%; height: 100%; position: fixed; z-index: 1;}
+iframe .html5-video-player .html5-watermark {display: none !important;}
+
+
+
+
