@@ -1,20 +1,23 @@
 
 <p id="notice"><%= notice %></p>
  
+
   <div class="col-md-6">
   	<iframe width="420" height="315" src=<%= @battle.link %> frameborder="0" allowfullscreen></iframe>
   </div>
   <div class="col-md-6">
  	<h1 id="word">tu palabra</h1>
+ 	
+ 	 <div id="change-text" class="button"><span>Click Me!</span></div>
+ 	<h2 id="counter" class='col-md-2'>0</h2>
  </div>
   
   
 
 
-<div id="change-text">
-	<button class=''>Change</button>
-</div>
 
+
+<div class="col-md-12">
 <p>
   <strong>Content:</strong>
   <p id="content"><%= @battle.content %></p>
@@ -22,7 +25,7 @@
 
 <%= link_to 'Edit', edit_battle_path(@battle) %> |
 <%= link_to 'Back', battles_path %>
-
+</div>
 <script>
 	
 </script>
@@ -35,9 +38,11 @@
 
 
 		
-				var nvalue = 0
+				var nvalue = 0;
+				var score = 0;
 				$("#change-text").on("click", function() {
-						
+
+						document.getElementById('counter').innerHTML = score++;
 						var split = document.getElementById('content').innerHTML.split(',');
 						var word = split[nvalue++];
 						document.getElementById('word').innerHTML = word;
