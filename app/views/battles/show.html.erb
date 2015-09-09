@@ -3,13 +3,15 @@
  
 
   <div class="col-md-6">
-  	<iframe width="420" height="315" src=<%= @battle.link %> frameborder="0" allowfullscreen></iframe>
+  	<iframe width="100%" height="400" src=<%= @battle.link %> frameborder="30" allowfullscreen></iframe>
   </div>
   <div class="col-md-6">
  	<h1 id="word">tu palabra</h1>
- 	
- 	 <div id="change-text" class="button"><span>Click Me!</span></div>
+            
+ 	 <div id="change-text" class="button"><span>Change Text</span></div>
+ 	 <div id="bonus" class="button"><span><i class="glyphicon glyphicon-star"></i> Bonnus <i class="glyphicon glyphicon-star"></i></span></div>
  	<h2 id="counter" class='col-md-2'>0</h2>
+ 	
  </div>
   
   
@@ -48,6 +50,7 @@
 						document.getElementById('word').innerHTML = word;
 						
 				});
+
 
 
 </script>

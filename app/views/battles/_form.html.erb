@@ -10,16 +10,17 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :link %><br>
-    <%= f.text_field :link %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= f.text_field :link, class:"form-control", placeholder:'link de youtube' %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= f.text_area :content, class:"form-control", rows:'5', placeholder:'Introduce las palabras separadas por comas' %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions col-md-6 col-md-offset-3">
+    <%= f.submit 'Crear Batalla', :class => 'btn btn-info btn-block'%>
   </div>
 <% end %>

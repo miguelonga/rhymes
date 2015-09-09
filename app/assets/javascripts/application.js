@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
-//= require jquery.tubular.1.0
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
