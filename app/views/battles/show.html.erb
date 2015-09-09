@@ -1,11 +1,6 @@
 
-<p id="notice"><%= notice %></p>
- 
-
-  <div class="col-md-6">
-  	<iframe width="100%" height="400" src=<%= @battle.link %> frameborder="30" allowfullscreen></iframe>
-  </div>
-  <div class="col-md-6">
+<p id="notice"><%= notice %></p> 
+  <div class="col-md-6 col-md-offset-3" id='wrapper'>
  	<h1 id="word">tu palabra</h1>
             
  	 <div id="change-text" class="button"><span>Change Text</span></div>
@@ -13,6 +8,11 @@
  	<h2 id="counter" class='col-md-2'>0</h2>
 
  </div>
+
+
+
+
+
   
   
 
@@ -29,10 +29,17 @@
 <%= link_to 'Back', battles_path %>
 </div>
 <script>
-	
+	$("document").ready(function() {
+  var options = {  videoId: 'QZAEV3UhhOc', 
+                   start: 0, 
+                   repeat: true
+                };  
+  
+	$('#wrapper').tubular(options); 
+}); 
 </script>
 
-
+<script src="http://www.seanmccambridge.com/tubular/js/jquery.tubular.1.0.js"></script>
 
 
 <script>
@@ -41,7 +48,7 @@
 
 				var split = document.getElementById('content').innerHTML.split(',');
 
-				
+
 				var nvalue = 0;
 				var score = 0;
 				$("#change-text").on("click", function() {
