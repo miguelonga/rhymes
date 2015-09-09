@@ -11,7 +11,7 @@
  	 <div id="change-text" class="button"><span>Change Text</span></div>
  	 <div id="bonus" class="button"><span><i class="glyphicon glyphicon-star"></i> Bonnus <i class="glyphicon glyphicon-star"></i></span></div>
  	<h2 id="counter" class='col-md-2'>0</h2>
- 	
+
  </div>
   
   
@@ -39,13 +39,15 @@
 
 
 
-		
+				var split = document.getElementById('content').innerHTML.split(',');
+
+				
 				var nvalue = 0;
 				var score = 0;
 				$("#change-text").on("click", function() {
 
 						document.getElementById('counter').innerHTML = score++;
-						var split = document.getElementById('content').innerHTML.split(',');
+						
 						var word = split[nvalue++];
 						document.getElementById('word').innerHTML = word;
 						
