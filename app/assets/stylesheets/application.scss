@@ -19,6 +19,7 @@
 
 
 #word{
+  margin-top: 30%;
 	font-size: 80px;
 	height: 190px;
 }
@@ -37,8 +38,9 @@
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
      padding: 0 15px;
-     height: 50%;
-     
+     height: 500px;
+    text-align: center;
+
 }
 
 .form-control{
@@ -46,7 +48,9 @@
 }
 
 
-
+.navbar-default{
+  height: 54px;
+}
 
 
 
@@ -73,10 +77,10 @@
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  -moz-transition: -moz-transform 0.2s ease-in-out;
-  -o-transition: -o-transform 0.2s ease-in-out;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
+  -moz-transition: -moz-transform 0.1s ease-in-out;
+  -o-transition: -o-transform 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
 }
 
 .button {
@@ -89,10 +93,10 @@
   -moz-box-shadow: 0 8px 0 #004d2e, 0 10px 15px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 0 8px 0 #004d2e, 0 10px 15px rgba(0, 0, 0, 0.35);
   box-shadow: 0 8px 0 #004d2e, 0 10px 15px rgba(0, 0, 0, 0.35);
-  -moz-transition: box-shadow 0.2s ease-in-out;
-  -o-transition: box-shadow 0.2s ease-in-out;
-  -webkit-transition: box-shadow 0.2s ease-in-out;
-  transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.1s ease-in-out;
+  -o-transition: box-shadow 0.1s ease-in-out;
+  -webkit-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
 }
 
 .button:active {

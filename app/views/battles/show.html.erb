@@ -2,10 +2,12 @@
 <p id="notice"><%= notice %></p> 
   <div class="col-md-6 col-md-offset-3" id='wrapper'>
  	<h1 id="word">tu palabra</h1>
-            
+ 	<h2 id="counter" >0</h2>
+     <div id="play" class="button tubular-play"><span><i class="glyphicon glyphicon-play"></i></span></div>
+     <div id="play" class="button tubular-pause"><span><i class="glyphicon glyphicon-pause"></i></span></div>
  	 <div id="change-text" class="button"><span>Change Text</span></div>
  	 <div id="bonus" class="button"><span><i class="glyphicon glyphicon-star"></i> Bonnus <i class="glyphicon glyphicon-star"></i></span></div>
- 	<h2 id="counter" class='col-md-2'>0</h2>
+ 	
 
  </div>
 
@@ -30,9 +32,13 @@
 </div>
 <script>
 	$("document").ready(function() {
-  var options = {  videoId: 'QZAEV3UhhOc', 
+  var options = {  videoId: "<%= @battle.link %>", 
                    start: 0, 
-                   repeat: true
+                   repeat: true,
+                   mute: false,
+                   playButtonClass: 'tubular-play',
+                   pauseButtonClass: 'tubular-pause',
+
                 };  
   
 	$('#wrapper').tubular(options); 
@@ -59,7 +65,13 @@
 						document.getElementById('word').innerHTML = word;
 						
 				});
-
+				$("#bonus").on("click", function() {
+						var plusscore = score + 5;
+						document.getElementById('counter').innerHTML = plusscore;
+						score = plusscore;
+						
+						
+				});
 
 
 </script>
